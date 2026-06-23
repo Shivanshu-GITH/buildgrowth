@@ -1,0 +1,237 @@
+@import "tailwindcss";
+
+/* ============================================================
+   [Brand] — Design System (premium dark, dual-accent)
+   Build = electric blue · Grow = warm coral
+   ============================================================ */
+
+@theme {
+  /* Surfaces */
+  --color-bg: #08090d;
+  --color-surface: #0e1016;
+  --color-surface-2: #14171f;
+  --color-surface-3: #1b1f29;
+
+  /* Text */
+  --color-ink: #f4f6fb;
+  --color-muted: #a3aab9;
+  --color-faint: #6b7280;
+
+  /* Lines */
+  --color-line: #1f232d;
+  --color-line-strong: #2b313d;
+
+  /* Build — Tech engine (blue) */
+  --color-build: #4f86f7;
+  --color-build-bright: #82a8ff;
+  --color-build-dim: #16203a;
+
+  /* Grow — Marketing engine (coral) */
+  --color-grow: #ff6b3d;
+  --color-grow-bright: #ff926b;
+  --color-grow-dim: #361d14;
+
+  /* Fonts */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: var(--font-sora), var(--font-inter), ui-sans-serif, sans-serif;
+
+  /* Radius scale */
+  --radius-xl: 1.25rem;
+  --radius-2xl: 1.5rem;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-line);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.025em;
+    line-height: 1.05;
+    font-weight: 600;
+    text-wrap: balance;
+  }
+
+  p { text-wrap: pretty; }
+
+  ::selection {
+    background: var(--color-build);
+    color: #fff;
+  }
+
+  ::-webkit-scrollbar { width: 11px; height: 11px; }
+  ::-webkit-scrollbar-track { background: var(--color-bg); }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-line-strong);
+    border-radius: 99px;
+    border: 3px solid var(--color-bg);
+  }
+  ::-webkit-scrollbar-thumb:hover { background: #3a414f; }
+}
+
+/* ---------- Layout helpers ---------- */
+.container-page {
+  width: 100%;
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+@media (min-width: 640px) { .container-page { padding-inline: 2rem; } }
+@media (min-width: 1024px) { .container-page { padding-inline: 2.5rem; } }
+
+.section {
+  padding-block: 5.5rem;
+}
+@media (min-width: 1024px) { .section { padding-block: 7.5rem; } }
+
+/* ---------- Typography accents ---------- */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.text-gradient {
+  background: linear-gradient(100deg, var(--color-build-bright), var(--color-grow-bright));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-gradient-build {
+  background: linear-gradient(100deg, #9cc0ff, var(--color-build));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-gradient-grow {
+  background: linear-gradient(100deg, #ffb295, var(--color-grow));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ---------- Surfaces & cards ---------- */
+.card {
+  background: color-mix(in oklab, var(--color-surface) 92%, transparent);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-xl);
+}
+
+.glass {
+  background: color-mix(in oklab, var(--color-surface-2) 70%, transparent);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--color-line-strong);
+}
+
+/* ---------- Decorative backgrounds ---------- */
+.bg-grid {
+  background-image:
+    linear-gradient(to right, var(--color-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--color-line) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+.bg-dots {
+  background-image: radial-gradient(var(--color-line-strong) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+.mask-fade-b {
+  -webkit-mask-image: linear-gradient(to bottom, #000 55%, transparent);
+  mask-image: linear-gradient(to bottom, #000 55%, transparent);
+}
+.mask-fade-x {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
+}
+
+/* Soft accent glows used behind heroes/sections */
+.glow {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(90px);
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ---------- Marquee (tech stack) ---------- */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 38s linear infinite;
+}
+.marquee-pause:hover .animate-marquee {
+  animation-play-state: paused;
+}
+
+/* ---------- Legal / prose ---------- */
+.legal-prose h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-ink);
+  margin-top: 0.5rem;
+}
+.legal-prose p,
+.legal-prose li {
+  line-height: 1.7;
+}
+.legal-prose ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.legal-prose a {
+  color: var(--color-build-bright);
+  text-decoration: underline;
+}
+
+/* ---------- Scroll reveal (CSS + IntersectionObserver) ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+.reveal.is-in {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee { animation: none; }
+  html { scroll-behavior: auto; }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

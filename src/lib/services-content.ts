@@ -86,7 +86,7 @@ export const servicesContent: Record<string, ServiceContent> = {
     ],
     metaTitle: "Website Development Company",
     metaDescription:
-      "Fast, modern, mobile-first websites and e-commerce stores for any business. SEO-ready and easy to edit. Get a fixed quote from Brandforge.",
+      "Fast, modern, mobile-first websites and e-commerce stores for any business. SEO-ready and easy to edit. Get a fixed quote from Ugrohi.",
   },
 
   "erp-management-systems": {
@@ -162,7 +162,7 @@ export const servicesContent: Record<string, ServiceContent> = {
     ],
     metaTitle: "AI Automation & Chatbot Development",
     metaDescription:
-      "WhatsApp bots, AI chat and calling agents, and workflow automation built with n8n and OpenAI. Save hours every day with Brandforge.",
+      "WhatsApp bots, AI chat and calling agents, and workflow automation built with n8n and OpenAI. Save hours every day with Ugrohi.",
   },
 
   "performance-marketing": {
@@ -199,7 +199,7 @@ export const servicesContent: Record<string, ServiceContent> = {
     ],
     metaTitle: "Performance Marketing & PPC Agency",
     metaDescription:
-      "Google and Meta ad campaigns managed for ROI. Conversion tracking, landing pages and transparent reporting. Get a free growth audit from Brandforge.",
+      "Google and Meta ad campaigns managed for ROI. Conversion tracking, landing pages and transparent reporting. Get a free growth audit from Ugrohi.",
   },
 
   "social-media-management": {
@@ -273,7 +273,7 @@ export const servicesContent: Record<string, ServiceContent> = {
     ],
     metaTitle: "Marketing Growth Plans & Retainers",
     metaDescription:
-      "Performance marketing, social media and creative bundled into one monthly retainer with unified, ROI-focused reporting from Brandforge.",
+      "Performance marketing, social media and creative bundled into one monthly retainer with unified, ROI-focused reporting from Ugrohi.",
   },
 };
 

@@ -73,7 +73,7 @@ export const solutionsContent: Record<string, SolutionContent> = {
     ],
     metaTitle: "School Management System / School ERP",
     metaDescription:
-      "A complete school management system — admissions, attendance, fees, exams, timetables and a parent app. Book a free demo with Brandforge.",
+      "A complete school management system — admissions, attendance, fees, exams, timetables and a parent app. Book a free demo with Ugrohi.",
   },
 
   "clinic-management-system": {
@@ -105,7 +105,7 @@ export const solutionsContent: Record<string, SolutionContent> = {
     ],
     metaTitle: "Clinic & Hospital Management System",
     metaDescription:
-      "A secure clinic management system — appointments, patient records, billing, prescriptions and WhatsApp reminders. Book a free demo with Brandforge.",
+      "A secure clinic management system — appointments, patient records, billing, prescriptions and WhatsApp reminders. Book a free demo with Ugrohi.",
   },
 
   "retail-inventory-system": {
@@ -137,7 +137,7 @@ export const solutionsContent: Record<string, SolutionContent> = {
     ],
     metaTitle: "Retail POS & Inventory Management System",
     metaDescription:
-      "A retail POS and inventory system with GST billing, barcode, multi-store stock and reporting. Book a free demo with Brandforge.",
+      "A retail POS and inventory system with GST billing, barcode, multi-store stock and reporting. Book a free demo with Ugrohi.",
   },
 
   "manufacturing-erp": {
@@ -169,7 +169,7 @@ export const solutionsContent: Record<string, SolutionContent> = {
     ],
     metaTitle: "Manufacturing ERP Software",
     metaDescription:
-      "A manufacturing ERP covering production, inventory, BOM, procurement, quality and costing in one system. Book a free demo with Brandforge.",
+      "A manufacturing ERP covering production, inventory, BOM, procurement, quality and costing in one system. Book a free demo with Ugrohi.",
   },
 };
 

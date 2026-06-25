@@ -8,7 +8,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Brandforge is one team with two specialties — a tech studio and a marketing studio — so you get build and growth without the hand-offs.",
+    "Ugrohi is one team with two specialties — a tech studio and a marketing studio — so you get build and growth without the hand-offs.",
 };
 
 const values = [

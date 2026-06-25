@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "Our Work — Case Studies",
   description:
-    "Real projects and real results across education, healthcare, retail and more — websites, ERP systems, automation and marketing by Brandforge.",
+    "Real projects and real results across education, healthcare, retail and more — websites, ERP systems, automation and marketing by Ugrohi.",
 };
 
 export default function WorkPage() {

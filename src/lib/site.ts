@@ -14,18 +14,18 @@ import {
 
 /** Single source of truth for brand-level content. Change the name in one place. */
 export const site = {
-  name: "Brandforge",
-  shortName: "Brandforge",
-  domain: "brandforge.in",
+  name: "Ugrohi",
+  shortName: "Ugrohi",
+  domain: "ugrohi.com",
   tagline: "We build it. We grow it. One partner for both.",
   description:
-    "Brandforge is a two-in-one studio: a tech engine that builds websites, ERP and AI systems, and a growth engine that runs performance marketing and social media — under one roof.",
-  email: "hello@brandforge.in",
-  phone: "+91 00000 00000",
-  whatsapp: "https://wa.me/910000000000",
+    "Ugrohi is a two-in-one studio: a tech engine that builds websites, ERP and AI systems, and a growth engine that runs performance marketing and social media — under one roof.",
+  email: "yougrowhigh@gmail.com",
+  phone: "+91 88821 83479",
+  whatsapp: "https://wa.me/918882183479",
   socials: {
-    instagram: "https://instagram.com/",
-    linkedin: "https://linkedin.com/",
+    instagram: "https://instagram.com/ugrohi",
+    linkedin: "https://www.linkedin.com/in/ugrohi-solutions-797762419",
     x: "https://x.com/",
     youtube: "https://youtube.com/",
   },

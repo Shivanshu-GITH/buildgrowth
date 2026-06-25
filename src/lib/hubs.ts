@@ -43,7 +43,7 @@ export const hubs: Record<Engine, HubContent> = {
     ],
     metaTitle: "Build — Web, Software, ERP & AI Development",
     metaDescription:
-      "Brandforge's tech studio builds websites, custom ERP and management systems, and AI automation — fast, reliable and made for your domain.",
+      "Ugrohi's tech studio builds websites, custom ERP and management systems, and AI automation — fast, reliable and made for your domain.",
   },
   grow: {
     engine: "grow",
@@ -62,6 +62,6 @@ export const hubs: Record<Engine, HubContent> = {
     ],
     metaTitle: "Grow — Performance Marketing & Social Media",
     metaDescription:
-      "Brandforge's marketing studio runs performance marketing and social media management built for ROI — more reach, more leads, more revenue.",
+      "Ugrohi's marketing studio runs performance marketing and social media management built for ROI — more reach, more leads, more revenue.",
   },
 };

@@ -7,7 +7,7 @@ import { ContactForm } from "@/components/contact/ContactForm";
 export const metadata: Metadata = {
   title: "Contact — Book a Free Strategy Call",
   description:
-    "Tell us what you need to build or grow. Book a free 30-minute strategy call with Brandforge — no obligation, no jargon.",
+    "Tell us what you need to build or grow. Book a free 30-minute strategy call with Ugrohi — no obligation, no jargon.",
 };
 
 const channels = [

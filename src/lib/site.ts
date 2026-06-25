@@ -14,8 +14,8 @@ import {
 
 /** Single source of truth for brand-level content. Change the name in one place. */
 export const site = {
-  name: "Ugrohi",
-  shortName: "Ugrohi",
+  name: "UGROHI",
+  shortName: "UGROHI",
   domain: "ugrohi.com",
   tagline: "We build it. We grow it. One partner for both.",
   description:
